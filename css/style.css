@@ -25,6 +25,13 @@
   --maxw: 1180px;
   --font-display: 'Space Grotesk', 'Inter', system-ui, sans-serif;
   --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+  /* Fixed tokens: intentionally identical in light and dark mode so
+     surfaces like the CTA band and embedded diagram card don't invert
+     and strand hardcoded text/art colors against a same-tone background. */
+  --cta-bg: #0B1220;
+  --cta-text: #FFFFFF;
+  --cta-text-soft: rgba(255,255,255,.7);
+  --card-fixed-bg: #FFFFFF;
   color-scheme: light;
 }
 
@@ -120,8 +127,8 @@ section.tight{ padding: 56px 0; }
 .btn:active{ transform: translateY(1px); }
 .btn-primary{ background: var(--ink); color: var(--bg); }
 .btn-primary:hover{ box-shadow: var(--shadow-lg); transform: translateY(-1px); }
-.btn-accent{ background: var(--accent); color:#fff; }
-.btn-accent:hover{ box-shadow: 0 10px 30px rgba(36,84,255,.35); transform: translateY(-1px); }
+.btn-accent{ background: var(--accent-2); color: #000000; }
+.btn-accent:hover{ box-shadow: 0 10px 30px rgba(0,184,153,.35); transform: translateY(-1px); }
 .btn-outline{ background: transparent; color: var(--ink); border-color: var(--border); }
 .btn-outline:hover{ border-color: var(--ink); }
 .btn-ghost{ background: transparent; color: var(--ink-soft); padding: 13px 10px; }
@@ -142,6 +149,13 @@ header.site{
 }
 .brand{ display:flex; align-items:center; gap:10px; font-family: var(--font-display); font-weight:700; font-size:1.08rem; }
 .brand svg{ width:30px; height:30px; }
+.brand-mark{ width:88px; height:88px; object-fit:contain; }
+/* Logo art is monochrome black-on-transparent; invert it in dark mode
+   so it doesn't disappear against a dark background. */
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]) .brand-mark{ filter: invert(1); }
+}
+:root[data-theme="dark"] .brand-mark{ filter: invert(1); }
 .nav-links{ display:flex; align-items:center; gap:30px; }
 .nav-links a{ font-size:.93rem; color: var(--ink-soft); font-weight:500; position:relative; }
 .nav-links a:hover, .nav-links a.active{ color: var(--ink); }
@@ -177,7 +191,7 @@ header.site{
 .hero h1{ margin-bottom: .4em; }
 .hero .actions{ display:flex; gap:14px; margin: 32px 0 8px; flex-wrap:wrap; }
 .hero-visual{
-  border-radius: var(--radius-l); border:1px solid var(--border); background: var(--bg-alt);
+  border-radius: var(--radius-l); border:1px solid var(--border); background: var(--card-fixed-bg);
   box-shadow: var(--shadow-lg); padding: 22px; position:relative;
 }
 .stat-strip{
@@ -262,11 +276,11 @@ header.site{
 
 /* ---------- CTA band ---------- */
 .cta-band{
-  border-radius: var(--radius-l); background: var(--ink); color: var(--bg);
+  border-radius: var(--radius-l); background: var(--cta-bg); color: var(--cta-text);
   padding: 56px; display:flex; justify-content:space-between; align-items:center; gap:30px; flex-wrap:wrap;
 }
-.cta-band h2{ color:#fff; margin-bottom:.2em; }
-.cta-band p{ color: rgba(255,255,255,.65); margin:0; }
+.cta-band h2{ color: var(--cta-text); margin-bottom:.2em; }
+.cta-band p{ color: var(--cta-text-soft); margin:0; }
 
 /* ---------- Forms ---------- */
 .form-grid{ display:grid; grid-template-columns: 1fr 1fr; gap: 18px; }
