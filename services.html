@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Services — Pacific Solutions</title>
+<meta name="description" content="Cloud & infrastructure architecture, DevOps & platform engineering, custom software engineering, SRE & observability, security & compliance, and strategic technology consulting.">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site">
+  <nav class="nav">
+    <a href="index.html" class="brand">
+      <svg viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="8" fill="#0B1220"/><path d="M7 21c2.5 0 2.5-3 5-3s2.5 3 5 3 2.5-3 5-3 2.5 3 5 3" stroke="#00B899" stroke-width="2.2" fill="none" stroke-linecap="round"/><path d="M7 15c2.5 0 2.5-3 5-3s2.5 3 5 3 2.5-3 5-3 2.5 3 5 3" stroke="#2454FF" stroke-width="2.2" fill="none" stroke-linecap="round" opacity="0.9"/></svg>
+      Pacific Solutions
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="services.html" class="active">Services</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="about.html">About</a>
+      <a href="work.html">Work</a>
+      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="btn btn-accent btn-sm">Book a call</a>
+    </div>
+    <div class="nav-right">
+      <button class="theme-toggle" aria-label="Toggle theme"></button>
+      <button class="menu-btn" aria-label="Open menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">Services</span>
+      <h1 style="max-width:16ch;">Six practices. Every engagement scoped to what you actually need.</h1>
+      <p class="lede">Work with Pacific Solutions in whichever shape suits your problem: a single advisory session, a fixed-scope project, or an ongoing retainer. See indicative pricing for each practice on the <a href="pricing.html" style="color:var(--accent-ink); font-weight:600;">pricing page</a>.</p>
+    </div>
+  </section>
+
+  <!-- 1. Cloud & Infrastructure -->
+  <section id="cloud-infrastructure">
+    <div class="container grid-2">
+      <div class="reveal">
+        <span class="eyebrow teal">01 / 06</span>
+        <h2>Cloud &amp; Infrastructure Architecture</h2>
+        <p class="lede">Design and operate infrastructure that scales with the business instead of against it — whether you're leaving a data center or optimizing an existing multi-cloud footprint.</p>
+        <a href="contact.html?service=cloud-infrastructure" class="btn btn-accent">Discuss this practice</a>
+      </div>
+      <div class="reveal">
+        <div class="card">
+          <h3 style="font-size:1rem;">Cloud Migration &amp; Strategy</h3>
+          <p>Moving legacy workloads to AWS, GCP or Azure via rehosting, refactoring, or full re-architecting — matched to your risk tolerance and timeline.</p>
+        </div>
+        <div class="card" style="margin-top:16px;">
+          <h3 style="font-size:1rem;">Infrastructure as Code (IaC)</h3>
+          <p>Automating environment provisioning with Terraform, OpenTofu, Ansible or CloudFormation, so environments are reproducible and reviewable.</p>
+        </div>
+        <div class="card" style="margin-top:16px;">
+          <h3 style="font-size:1rem;">Hybrid &amp; Multi-Cloud Design</h3>
+          <p>Unified operations across private data centers and multiple public cloud providers, with a single control plane for networking and identity.</p>
+        </div>
+        <div class="card" style="margin-top:16px;">
+          <h3 style="font-size:1rem;">Cloud Cost Optimization (FinOps)</h3>
+          <p>Analyzing resource utilization, rightsizing instances, and establishing governance to cut cloud spend without cutting capability.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="split">
+
+  <!-- 2. DevOps -->
+  <section id="devops-platform">
+    <div class="container grid-2">
+      <div class="reveal" style="order:2;">
+        <span class="eyebrow teal">02 / 06</span>
+        <h2>DevOps &amp; Platform Engineering</h2>
+        <p class="lede">Turn delivery into a repeatable, self-service process — so shipping software stops depending on one person's memory.</p>
+        <a href="contact.html?service=devops-platform" class="btn btn-accent">Discuss this practice</a>
+      </div>
+      <div class="reveal" style="order:1;">
+        <div class="card">
+          <h3 style="font-size:1rem;">CI/CD Automation</h3>
+          <p>Designing continuous integration and delivery pipelines (GitLab CI, GitHub Actions, Jenkins) that automate testing and release cycles.</p>
+        </div>
+        <div class="card" style="margin-top:16px;">
+          <h3 style="font-size:1rem;">Containerization &amp; Orchestration</h3>
+          <p>Packaging applications into Docker containers and running scalable clusters with Kubernetes, ECS, or OpenShift.</p>
+        </div>
+        <div class="card" style="margin-top:16px;">
+          <h3 style="font-size:1rem;">Internal Developer Platforms (IDP)</h3>
+          <p>Building self-service tools and portals so developers can provision environments without filing operations tickets.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="split">
+
+  <!-- 3. Software engineering -->
+  <section id="software-engineering">
+    <div class="container grid-2">
+      <div class="reveal">
+        <span class="eyebrow teal">03 / 06</span>
+        <h2>Custom Software Engineering &amp; Modernization</h2>
+        <p class="lede">Software that matches how the business actually works today — not the assumptions it was built on five years ago.</p>
+        <a href="contact.html?service=software-engineering" class="btn btn-accent">Discuss this practice</a>
+      </div>
+      <div class="reveal">
+        <div class="card">
+          <h3 style="font-size:1rem;">Legacy Application Modernization</h3>
+          <p>Breaking monolithic software into microservices or serverless architectures, incrementally and without a "big bang" rewrite.</p>
+        </div>
+        <div class="card" style="margin-top:16px;">
+          <h3 style="font-size:1rem;">Custom Software Development</h3>
+          <p>Designing and building full-stack applications, APIs, and backend microservices tailored to specific business needs.</p>
+        </div>
+        <div class="card" style="margin-top:16px;">
+          <h3 style="font-size:1rem;">Software Architecture Reviews</h3>
+          <p>Assessing existing codebases, design patterns, and database models for performance, maintainability, and scalability bottlenecks.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="split">
+
+  <!-- 4. SRE -->
+  <section id="sre-observability">
+    <div class="container grid-2">
+      <div class="reveal" style="order:2;">
+        <span class="eyebrow teal">04 / 06</span>
+        <h2>Site Reliability Engineering (SRE) &amp; Observability</h2>
+        <p class="lede">See problems before your customers do, and recover faster when something still slips through.</p>
+        <a href="contact.html?service=sre-observability" class="btn btn-accent">Discuss this practice</a>
+      </div>
+      <div class="reveal" style="order:1;">
+        <div class="card">
+          <h3 style="font-size:1rem;">Monitoring &amp; Metrics</h3>
+          <p>Implementing Datadog, Prometheus, Grafana, and ELK/OpenSearch to track system health in real time.</p>
+        </div>
+        <div class="card" style="margin-top:16px;">
+          <h3 style="font-size:1rem;">Incident Management &amp; SLA Design</h3>
+          <p>Establishing automated alerting, runbooks, and incident response frameworks to reduce Mean Time to Recovery (MTTR).</p>
+        </div>
+        <div class="card" style="margin-top:16px;">
+          <h3 style="font-size:1rem;">Performance Tuning &amp; Load Testing</h3>
+          <p>Benchmarking infrastructure limits under heavy traffic and eliminating database or network latency.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="split">
+
+  <!-- 5. Security -->
+  <section id="security-compliance">
+    <div class="container grid-2">
+      <div class="reveal">
+        <span class="eyebrow teal">05 / 06</span>
+        <h2>Security, Compliance &amp; Governance (DevSecOps)</h2>
+        <p class="lede">Compliance treated as an architecture decision, not a document you write once a year.</p>
+        <a href="contact.html?service=security-compliance" class="btn btn-accent">Discuss this practice</a>
+      </div>
+      <div class="reveal">
+        <div class="card">
+          <h3 style="font-size:1rem;">Infrastructure Audits &amp; Hardening</h3>
+          <p>Scanning environments for misconfigurations, exposed endpoints, and compliance gaps.</p>
+        </div>
+        <div class="card" style="margin-top:16px;">
+          <h3 style="font-size:1rem;">Regulatory Compliance Readiness</h3>
+          <p>Structuring infrastructure to meet frameworks like ISO 27001, SOC 2, HIPAA, or GDPR.</p>
+        </div>
+        <div class="card" style="margin-top:16px;">
+          <h3 style="font-size:1rem;">Identity &amp; Access Management (IAM)</h3>
+          <p>Setting up least-privilege policies, Zero Trust networking, and central identity management.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="split">
+
+  <!-- 6. Strategic -->
+  <section id="strategic-consulting">
+    <div class="container grid-2">
+      <div class="reveal" style="order:2;">
+        <span class="eyebrow teal">06 / 06</span>
+        <h2>Strategic Technology Consulting</h2>
+        <p class="lede">Independent, vendor-neutral advisory for decisions that are expensive to get wrong — delivered separately from any build work if you prefer a second opinion only.</p>
+        <a href="contact.html?service=strategic-consulting" class="btn btn-accent">Discuss this practice</a>
+      </div>
+      <div class="reveal" style="order:1;">
+        <div class="card">
+          <h3 style="font-size:1rem;">Technical Due Diligence</h3>
+          <p>Evaluating a target company's software stack, codebase quality, and infrastructure risk for M&amp;A or venture funding.</p>
+        </div>
+        <div class="card" style="margin-top:16px;">
+          <h3 style="font-size:1rem;">Technology Roadmap &amp; Vendor Evaluation</h3>
+          <p>Recommending tech stacks, database engines, or third-party platforms based on long-term goals, not vendor incentives.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="tight">
+    <div class="container">
+      <div class="callout reveal">
+        <strong>A note on scope:</strong> every practice above is available as standalone advisory (pay for judgment, not delivery), as a fixed-scope project, or as an ongoing retainer. Advisory-only engagements are common — you don't need to hire Pacific Solutions to build anything to get a second opinion.
+      </div>
+      <div class="cta-band reveal" style="margin-top:30px;">
+        <div>
+          <h2>Not sure which practice fits?</h2>
+          <p>Tell me the problem, not the solution — I'll tell you which practice (or combination) applies.</p>
+        </div>
+        <a href="contact.html" class="btn btn-accent">Start a conversation</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="brand">
+          <svg viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="8" fill="#0B1220"/><path d="M7 21c2.5 0 2.5-3 5-3s2.5 3 5 3 2.5-3 5-3 2.5 3 5 3" stroke="#00B899" stroke-width="2.2" fill="none" stroke-linecap="round"/><path d="M7 15c2.5 0 2.5-3 5-3s2.5 3 5 3 2.5-3 5-3 2.5 3 5 3" stroke="#2454FF" stroke-width="2.2" fill="none" stroke-linecap="round" opacity="0.9"/></svg>
+          Pacific Solutions
+        </div>
+        <p style="margin-top:14px; max-width:300px;">Independent cloud, infrastructure and software consultancy based in Helsinki, Finland. Founded July 2025.</p>
+        <div class="socials" style="margin-top:16px;">
+          <a href="https://www.linkedin.com/in/prashantapaudel" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.94 8.5H3.56V21h3.38V8.5ZM5.25 3a1.96 1.96 0 1 0 0 3.92A1.96 1.96 0 0 0 5.25 3ZM20.44 21h-3.37v-6.4c0-1.53-.03-3.49-2.13-3.49-2.13 0-2.46 1.66-2.46 3.38V21H9.11V8.5h3.24v1.71h.05c.45-.85 1.55-1.75 3.2-1.75 3.42 0 4.85 2.25 4.85 5.15V21Z"/></svg></a>
+          <a href="https://github.com/pacificpaudel" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.16 19.5c.5.1.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.15-1.11-1.46-1.11-1.46-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.3 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg></a>
+          <a href="https://prashantapaudel.com.np" target="_blank" rel="noopener" aria-label="Personal website"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <a href="services.html#cloud-infrastructure">Cloud &amp; Infrastructure</a>
+        <a href="services.html#devops-platform">DevOps &amp; Platform Eng.</a>
+        <a href="services.html#software-engineering">Software Engineering</a>
+        <a href="services.html#sre-observability">SRE &amp; Observability</a>
+        <a href="services.html#security-compliance">Security &amp; Compliance</a>
+        <a href="services.html#strategic-consulting">Strategic Consulting</a>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="about.html">About</a>
+        <a href="work.html">Work &amp; track record</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <a href="privacy.html">Privacy policy</a>
+        <a href="terms.html">Terms &amp; regulations</a>
+        <p style="margin-top:14px;">prashant@prashantapaudel.com.np<br>Helsinki, Finland</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span data-year></span> Pacific Solutions — Prashanta Paudel. All rights reserved.</p>
+      <p>Sole proprietorship (toiminimi) · Helsinki, Finland</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
